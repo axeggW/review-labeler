@@ -1,0 +1,37 @@
+{
+  "$schema": "./review-labels.schema.json",
+  "labels": [
+    {
+      "id": "ui",
+      "name": "UI",
+      "description": "Renderer and component changes",
+      "color": "#7c3aed",
+      "rules": [
+        {
+          "paths": ["src/renderer/**", "**/*.css", "**/*.tsx"],
+          "changeTypes": ["added", "modified", "renamed"]
+        }
+      ]
+    },
+    {
+      "id": "tests",
+      "name": "Tests",
+      "color": "#2563eb",
+      "rules": [
+        {
+          "paths": ["**/*.test.ts", "**/*.spec.ts", "**/__tests__/**"]
+        }
+      ]
+    },
+    {
+      "id": "docs",
+      "name": "Docs",
+      "color": "#059669",
+      "rules": [
+        {
+          "paths": ["README*", "docs/**", "**/*.md"]
+        }
+      ]
+    }
+  ]
+}
